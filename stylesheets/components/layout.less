@@ -1,0 +1,52 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// @author      Edmundas Kondrašovas
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.container {
+	width: @total-width;
+	margin: 0 auto;
+}
+
+.clear {
+	.clearfix;
+}
+
+.inner {
+	padding: 0.8em;
+}
+
+.centered {
+	margin: 0 auto;
+
+	&.text {
+		margin: 0;
+		text-align: center;
+	}
+}
+
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	&.inline {
+		li {
+			display: inline;
+		}
+	}
+
+	&.block {
+		li {
+			display: inline-block;
+		}
+	}
+
+	&.floated {
+		li {
+			display: block;
+			float: left;
+		}
+	}
+}

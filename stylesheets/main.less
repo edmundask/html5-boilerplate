@@ -1,0 +1,85 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// @author      Edmundas Kondrašovas
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import 'helpers/mixins';                       // a set of useful LESS mixins
+@import 'helpers/grid';                         // semantic.gs grid
+@import 'helpers/normalize'                     // for consistent element rendering in all browsers
+@import 'components/variables';                 // theme-specific variables
+@import 'components/fonts';                     // custom fonts
+@import 'components/ui';                        // general UI elements (inputs, buttons etc)
+@import 'components/plugins';                   // 3rd-party plugin styling
+@import 'components/transitions';               // CSS3 transitions (optional)
+@import 'components/layout';                    // helper layout classes
+@import 'components/modules';                   // design elements structured as separate modules
+@import 'components/legacy';                    // legacy browser support
+@import 'components/print';                     // optimize the design for print
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Initialization
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// [use this to override variables and set up new ones if needed]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Defaults
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+html, body, input, textarea {
+    font-family: @default-font, @safe-fonts;
+    font-size: @default-font-size;
+    line-height: @default-line-height;
+}
+
+// When using custom fonts, it is a good idea to reset font weight for headings
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+body {
+    background: white;
+}
+
+a {
+    color: @color-link-default;
+    text-decoration: none;
+
+    &:hover {
+        color: @color-link-hover;
+    }
+
+    &:active {
+        color: @color-link-active;
+    }
+
+    // Remove this if you don't want to style visited links differently
+    &:visited {
+        color: @color-link-visited;
+    }
+}
+
+label {
+    cursor: pointer;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Main Design Structure
+// Keep this clean and only for main design elements/blocks. Where possible, isolate elements using
+// modules instead.
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#header {
+
+}
+
+#main {
+
+}
+
+#footer {
+
+}
